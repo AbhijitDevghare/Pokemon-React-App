@@ -1,0 +1,54 @@
+body
+{
+
+    background-color: #fad9f4;
+    overflow-x: hidden  ;
+}
+
+.Home-Page-Wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h1{
+    letter-spacing: 15px;
+    font-size: 45px;
+
+}
+
+.search-poke
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-poke input
+{
+    height: 50px;
+    width: 800px;
+   padding: 35px;
+   margin: 20px;
+   outline: none; 
+   font-size: 16px;
+}
+
+
+@media (max-width:800px) {
+    
+.search-poke input
+{
+    height: 30px;
+    width: 350px;
+}
+
+}
+
+
+
+
+
