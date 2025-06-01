@@ -12,10 +12,10 @@ function useDescriptionHook(pokeId,pokemonName)
         let response;
         if(pokemonName)
         {
-             response = await axios.get(`http://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+             response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
 
         }else{
-          response = await axios.get(`http://pokeapi.co/api/v2/pokemon/${pokeId.id}`)
+          response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokeId.id}`)
         }
         const data = response.data
         console.log("Data ",data)
