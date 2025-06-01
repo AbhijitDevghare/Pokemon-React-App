@@ -22,7 +22,7 @@ function useDescriptionHook(pokeId,pokemonName)
         const pokeTypes = data.types && data.types.map((poketype)=>poketype.type.name)
 
         //fetch more pokemon list
-        const morePokeResp = await axios.get(`http://pokeapi.co/api/v2/type/${pokeTypes[0]}`) 
+        const morePokeResp = await axios.get(`https://pokeapi.co/api/v2/type/${pokeTypes[0]}`) 
         const morePokeList =  morePokeResp.data.pokemon.slice(0,10)
 
         //fetch more pokemon list id from the url 
