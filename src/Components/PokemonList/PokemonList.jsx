@@ -4,7 +4,7 @@ import Pokemon from "../Pokemon/Pokemon.jsx";
 import "./PokemonList.css"
 function PokemonList()
 {
-    const [pokemonState,setPokemonState]=usePokemonList("http://pokeapi.co/api/v2/pokemon")
+    const [pokemonState,setPokemonState]=usePokemonList("https://pokeapi.co/api/v2/pokemon")
     
     return (
         <>
